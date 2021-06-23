@@ -1,0 +1,16 @@
+<h1>Admin &raquo; Categories</h1>
+<div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+  </div>
+
+  <div class="panel panel-default products">
+
+  <table class="table table-bordered">
+  <center> <h2>List of Categories</h2> </center>
+    <td>
+    <%= render @categories %>
+    <br>
+  </td>
+  </table>
+</div>
+</section>
