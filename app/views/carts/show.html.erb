@@ -1,3 +1,11 @@
+<% if enhanced_cart.empty? %>
+<div class="alert alert-warning" role="alert">
+<h1> Sorry, your cart is empty! </h1>
+</div>
+<p><%= link_to "Go Back", "/" %></p>
+
+<% else %>
+
 <section class="cart-show">
 
   <header class="page-header">
@@ -50,3 +58,5 @@
   </div>
 
 </section>
+
+<% end %>
